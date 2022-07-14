@@ -167,6 +167,11 @@ header{
 
 /*PROJECT CARDS*/
 
+.project-card{
+    border: 1px solid rgb(201, 190, 190);
+    box-shadow: 5px 5px rgb(201, 190, 190);
+}
+
 .project-card-container{
     display: grid;
     gap: 30px;
@@ -287,18 +292,24 @@ header{
 /*MEDIA QUERIES*/
 
 @media (hover : hover){
+
+    .project-card{
+        border: none;
+        box-shadow: none;
+    }
+
     .project-card:hover{
         border: 1px solid rgb(201, 190, 190);
         box-shadow: 5px 5px rgb(201, 190, 190);
     }
 }
 
-@media (hover : none){
+/* @media (hover : none){
     .project-card{
         border: 1px solid rgb(201, 190, 190);
         box-shadow: 5px 5px rgb(201, 190, 190);
     }
-}
+} */
 
 @media (min-width: 750px){
     .main-img-info-container{
