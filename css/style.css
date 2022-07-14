@@ -17,7 +17,7 @@ header{
 }
 
 .navbar{
-    background-color: rgb(224, 131, 24);
+    background-color: #e08318;
 }
 
 .navbar-brand{
@@ -50,6 +50,8 @@ header{
     margin: 0;
 }
 
+/*FADEINUP*/
+
 .section-hero h1{
     font-size: 3.5rem;
     font-weight: 700;
@@ -61,7 +63,7 @@ header{
 
 .section-hero h3{
     font-size: 1.7rem;
-    color: rgb(224, 131, 24);
+    color: #e08318;
 }
 
 /*TYPEWRITER*/
@@ -92,7 +94,7 @@ header{
 
 #typewriter-header::after{
     width: 0.125em;
-    background: rgb(224, 131, 24);
+    background: #e08318;
     animation: typewriter 3s steps(12) 1s forwards, blink 750ms steps(12) infinite;
 }
 
@@ -167,11 +169,6 @@ header{
 
 /*PROJECT CARDS*/
 
-.project-card{
-    border: 1px solid rgb(201, 190, 190);
-    box-shadow: 5px 5px rgb(201, 190, 190);
-}
-
 .project-card-container{
     display: grid;
     gap: 30px;
@@ -242,20 +239,20 @@ header{
     font-size: 1rem;
     text-decoration: none;
     color: white;
-    background-color: black;
+    background-color: #181616;
     border-radius: 13px;;
     cursor: pointer;
 }
 
 .project-card .light-btn{
-    background-color: rgb(224, 131, 24);
+    background-color: #e08318;
 }
 
 /*CONTACT SECTION*/
 
 .footer-contact{
     padding: 1em 0 0.7em;
-    background-color: rgb(24, 22, 22);
+    background-color: #181616;
 }
 
 .footer-contact h2{
@@ -268,7 +265,7 @@ header{
 .brands-container .fa-brands,
 .brands-container .fa-solid,
 .small-copyright{
-    color: rgb(224, 131, 24);
+    color: #e08318;
 }
 
 .brands-container{
@@ -291,25 +288,19 @@ header{
 
 /*MEDIA QUERIES*/
 
-@media (hover : hover){
-
-    .project-card{
-        border: none;
-        box-shadow: none;
-    }
-
+@media (hover:hover){
     .project-card:hover{
-        border: 1px solid rgb(201, 190, 190);
-        box-shadow: 5px 5px rgb(201, 190, 190);
+        border: 1px solid #c9bebe;
+        box-shadow: 5px 5px #c9bebe;
     }
 }
 
-/* @media (hover : none){
+@media (hover:none){
     .project-card{
-        border: 1px solid rgb(201, 190, 190);
-        box-shadow: 5px 5px rgb(201, 190, 190);
+        border: 1px solid #c9bebe;
+        box-shadow: 5px 5px #c9bebe;
     }
-} */
+}
 
 @media (min-width: 750px){
     .main-img-info-container{
