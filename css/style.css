@@ -1,0 +1,320 @@
+/*GENERAL*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/bg_img.png');
+}
+
+/*HEADER*/
+
+header{
+    margin-bottom: 1em;
+}
+
+.navbar{
+    background-color: rgb(224, 131, 24);
+}
+
+.navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.nav-item{
+    font-size: 1.1rem;
+}
+
+/*MAIN*/
+
+/*CONTAINER*/
+
+.container{
+    max-width: 1000px;
+    padding: 0 1em;
+}
+
+/*HERO SECTION*/
+
+.section-hero{
+    margin-bottom: 3em;
+}
+
+.section-hero h1,
+.section-hero h3{
+    margin: 0;
+}
+
+.section-hero h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 500ms ease forwards;
+}
+
+.section-hero h3{
+    font-size: 1.7rem;
+    color: rgb(224, 131, 24);
+}
+
+/*TYPEWRITER*/
+
+.typewriter-container{
+    display: flex;
+    justify-content: end;
+}
+
+#typewriter-header{
+    position: relative;
+}
+
+#typewriter-header::before,
+#typewriter-header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#typewriter-header::before{
+    background: #fff;
+    animation: typewriter 3s steps(12) 1s forwards;
+}
+
+#typewriter-header::after{
+    width: 0.125em;
+    background: rgb(224, 131, 24);
+    animation: typewriter 3s steps(12) 1s forwards, blink 750ms steps(12) infinite;
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*ABOUT SECTION*/
+
+.section-about{
+    margin-bottom: 3em;
+}
+
+.main-img-container{
+    margin: 0 auto;
+    max-width: 350px;
+    margin-bottom: 1.3em;
+}
+
+#main-img{
+   max-width: 100%;
+   border-radius: 50%;
+}
+
+.section-about h2,
+.section-about p{
+    margin: 0;
+}
+
+.section-about h2{
+    margin-bottom: 1em;
+    font-size: 2rem;
+}
+
+.section-about p{
+    margin-bottom: 0.4em;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/*PROJECTS SECTION*/
+
+.section-projects{
+    margin-bottom: 3em;
+}
+
+.section-projects h2,
+.section-project-card h3,
+.section-project-card p{
+    margin: 0;
+}
+
+.section-projects h2{
+    margin-bottom: 1.5em;
+    font-size: 2rem;
+}
+
+/*PROJECT CARDS*/
+
+.project-card-container{
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+/*BACKGROUND IMAGES OF PROJECTS*/
+
+.project-card-background{
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#dice-game{
+    background-image: url('../images/dice-game-cover.png');
+}
+
+#password-generator{
+    background-image: url('../images/password-generator-cover.png');
+}
+
+#color-scheme-generator{
+    background-image: url('../images/color-scheme-generator-cover.png');
+}
+
+#invoice-creator{
+    background-image: url('../images/invoice-creator-cover.png');
+}
+
+#tenzies-game{
+    background-image: url('../images/tenzies-game-cover.png');
+}
+
+/*PROJECT CARD'S INFO*/
+
+.project-card{
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.project-card-info-container{
+    padding: 1em;
+}
+
+.project-card h3{
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+
+.project-card p{
+    margin-bottom: 1.2em;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.project-card .btn-container{
+    display: flex;
+    justify-content: end;
+}
+
+.project-card .btn{
+    margin-right: 0.4em;
+    padding: 0.5em;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 13px;;
+    cursor: pointer;
+}
+
+.project-card .light-btn{
+    background-color: rgb(224, 131, 24);
+}
+
+/*CONTACT SECTION*/
+
+.footer-contact{
+    padding: 1em 0 0.7em;
+    background-color: rgb(24, 22, 22);
+}
+
+.footer-contact h2{
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer-contact h2,
+.brands-container .fa-brands,
+.brands-container .fa-solid,
+.small-copyright{
+    color: rgb(224, 131, 24);
+}
+
+.brands-container{
+    max-width: 1200px;
+    margin: 0 auto 1em;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brands-container .fa-brands,
+.brands-container .fa-solid{
+    font-size: 2.2rem;
+}
+
+.small-copyright{
+    display: block;
+    text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media (hover : hover){
+    .project-card:hover{
+        border: 1px solid rgb(201, 190, 190);
+        box-shadow: 5px 5px rgb(201, 190, 190);
+    }
+}
+
+@media (hover : none){
+    .project-card{
+        border: 1px solid rgb(201, 190, 190);
+        box-shadow: 5px 5px rgb(201, 190, 190);
+    }
+}
+
+@media (min-width: 750px){
+    .main-img-info-container{
+        display: flex;
+    }
+    .main-img-container{
+        margin-right: 2em;
+    }
+    .project-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1000px){
+    .project-card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

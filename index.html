@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON-->
+    <link rel="icon" type="image/svg" href="./images/happy-guy.svg">
+    <!--BOOTSTRAP LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!--FONT AWESOME LINK-->
+     <script src="https://kit.fontawesome.com/8f173df580.js" crossorigin="anonymous"></script>
+     <!--GOOGLE FONTS LINK-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+     <!--CSS LINK-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Diego Sanabria | My Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">&#60;Diego Sanabria&#62;</a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+        <section class="section-hero">
+            <h1>Hello, I am Diego 👋🏼</h1>
+            <div class="typewriter-container">
+              <h3 id="typewriter-header">frontend dev</h3>
+            </div>
+        </section>
+        <section id="about" class="section-about">
+            <h2>About</h2>
+            <div class="main-img-info-container">
+              <div class="main-img-container">
+                <img id="main-img" src="./images/diego_sanabria.jpg" alt="Diego Sanabria wearing glasses and looking at the camera smiling">
+              </div>
+              <div>
+                <p>Biomedical Engineer by profession and technology enthusiast. I have focused my interest on Software development, since I believe it can help humanity with the good use of it. I love to learn new things and improve myself every single day.</p>
+                <p>I started learning Web Development with some courses on Coursera and Scrimba. I also try to stay up to date with the latest technologies by watching tutorials on Youtube, listening to podcasts and joining tech communities 🤓.</p>
+              </div>
+            </div>
+        </section>
+        <section id="projects" class="section-projects">
+            <h2>Projects</h2>
+              <div class="project-card-container">
+                  <div class="project-card">
+                    <div id="dice-game" class="project-card-background"></div>
+                    <div class="project-card-info-container">
+                      <h3>Dice Game</h3>
+                      <p>This project is a dice game simulator, where the user runs a game between two players. The first player to get twenty one points wins. Once the game is over, the user can reset the game and run it again. This project is part of The Frontend Developer Career Path on Scrimba.</p>
+                      <div class="btn-container">
+                        <a class="btn light-btn" href="https://sanabriadiego.github.io/dice-game/">Live Demo</a>
+                        <a class="btn" href="https://github.com/sanabriadiego/dice-game">GitHub</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="password-generator" class="project-card-background"></div>
+                    <div class="project-card-info-container">
+                      <h3>Password Generator</h3>
+                      <p>This project generates four passwords based on a characters array. It uses mainly functions on Javascript to do so. The user can select the lenght of the passwords and can easily copy them once they are generated. This a solo project, part of The Frontend Developer Career Path on Scrimba.</p>
+                      <div class="btn-container">
+                        <a class="btn light-btn" href="https://sanabriadiego.github.io/password-generator/">Live Demo</a>
+                        <a class="btn" href="https://github.com/sanabriadiego/password-generator">GitHub</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="color-scheme-generator" class="project-card-background"></div>
+                    <div class="project-card-info-container">
+                      <h3>Color Scheme Generator</h3>
+                      <p>This project connects to The Color API to generate a color scheme. The user should select a seed color and a mode, like monochrome or analogic, in order to generate it. This a solo project, part of The Frontend Developer Career Path on Scrimba.</p>
+                      <div class="btn-container">
+                        <a class="btn light-btn" href="https://sanabriadiego.github.io/color-scheme-generator/">Live Demo</a>
+                        <a class="btn" href="https://github.com/sanabriadiego/color-scheme-generator">GitHub</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="invoice-creator" class="project-card-background"></div>
+                    <div class="project-card-info-container">
+                      <h3>Invoice Creator</h3>
+                      <p>This projects generates an invoice, based on three items. The user can add or remove the items and get a total cost for the invoice. It uses mainly functions on Javascript to do so. This a solo project, part of The Frontend Developer Career Path on Scrimba.</p>
+                      <div class="btn-container">
+                        <a class="btn light-btn" href="https://sanabriadiego.github.io/invoice-creator/">Live Demo</a>
+                        <a class="btn" href="https://github.com/sanabriadiego/invoice-creator">GitHub</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="tenzies-game" class="project-card-background"></div>
+                    <div class="project-card-info-container">
+                      <h3>Tenzies Game</h3>
+                      <p>This project is a tenzies game simulator. The user has to hold all the dice that have the same value. Then he has to roll the dice and repeat the process. The game is over, once all the dice have the same value. It was built using React. This project is part of The Frontend Developer Career Path on Scrimba.</p>
+                      <div class="btn-container">
+                        <a class="btn light-btn" href="https://sanabriadiego.github.io/tenzies-game/">Live Demo</a>
+                        <a class="btn" href="https://github.com/sanabriadiego/tenzies-game">GitHub</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="footer-contact">
+        <h2>Contact Me</h2>
+        <div class="brands-container">
+          <a href="https://twitter.com/sanabriadiegop"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com/in/sanabriadiego/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/sanabriadiego"><i class="fa-brands fa-github-square"></i></a>
+          <a href="mailto:sanabria.diego.p@gmail.com?Subject=Portfolio"><i class="fa-solid fa-square-envelope"></i></a>
+        </div>
+        <small class="small-copyright">&#169; 2022. All rights Reserved.</small>
+    </footer>
+    <!--BOOTSTRAP LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
