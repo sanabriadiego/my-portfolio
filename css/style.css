@@ -206,6 +206,10 @@ header{
     background-image: url('../images/tenzies-game-cover.png');
 }
 
+#speed-typing-game{
+    background-image: url('../images/speed-typing-game-cover.png');
+}
+
 /*PROJECT CARD'S INFO*/
 
 .project-card{
