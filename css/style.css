@@ -89,13 +89,13 @@ header{
 
 #typewriter-header::before{
     background: #fff;
-    animation: typewriter 3s steps(12) 1s forwards;
+    animation: typewriter 7s steps(15) 1s forwards;
 }
 
 #typewriter-header::after{
     width: 0.125em;
     background: #e08318;
-    animation: typewriter 3s steps(12) 1s forwards, blink 750ms steps(12) infinite;
+    animation: typewriter 7s steps(15) 1s forwards, blink 750ms steps(15) infinite;
 }
 
 @keyframes typewriter{
@@ -187,7 +187,7 @@ header{
 }
 
 #dice-game{
-    background-image: url('../images/dice-game-cover.png');
+    background-image: url('../images/fintech-solver-cover.png');
 }
 
 #password-generator{
