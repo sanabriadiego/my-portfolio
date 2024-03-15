@@ -186,7 +186,7 @@ header{
     border-top-right-radius: inherit;
 }
 
-#dice-game{
+#fintech-solvers{
     background-image: url('../images/fintech-solver-cover.png');
 }
 
@@ -206,8 +206,8 @@ header{
     background-image: url('../images/tenzies-game-cover.png');
 }
 
-#speed-typing-game{
-    background-image: url('../images/speed-typing-game-cover.png');
+#hearth-disease-prediction{
+    background-image: url('../images/hearth-disease-cover.png');
 }
 
 /*PROJECT CARD'S INFO*/
